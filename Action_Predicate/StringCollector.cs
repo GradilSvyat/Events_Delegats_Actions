@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
 
-namespace Events
+namespace Action_Predicate
 {
     class StringCollector
     {
@@ -11,9 +10,7 @@ namespace Events
 
         public void AddString(string addSrting)
         {
-            if (!addSrting.Any(char.IsDigit))
-                StringCollection.Add(addSrting);
+            StringCollection.Add(addSrting);
         }
-
     }
 }

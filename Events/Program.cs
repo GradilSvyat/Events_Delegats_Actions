@@ -12,7 +12,10 @@ namespace Events
             InputHandler inputUserString = new InputHandler();
             inputUserString.InputString += stringCollection.AddString;
             inputUserString.InputString += numericCollection.AddString;
-            userString = inputUserString.Input();
+            while (true)
+            {
+                userString = inputUserString.Input();
+            }
         }
     }
 }
