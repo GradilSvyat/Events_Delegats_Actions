@@ -5,7 +5,7 @@ namespace Action_Predicate
 {
     class Program
     {
-        public delegate void Action <T> (string addString);
+        public delegate void Action<T>(string inputString);
 
         static void Main(string[] args)
         {
@@ -13,12 +13,11 @@ namespace Action_Predicate
             string userString;
             StringCollector stringCollection = new StringCollector();
             AlphaNumbericCollector numericCollection = new AlphaNumbericCollector();
-            Action <string> addString = stringCollection.AddString;
-            Action <string> addStringWithDigit = numericCollection.AddString;
+            Action<string> addString = StringCollector.AddString;
+            Action<string> addStringWithDigit = AlphaNumbericCollector.AddString;
             while (true)
             {
                 userString = InputHandler.Input();
-
                 if (isDigit(userString))
                 {
                     addStringWithDigit(userString);

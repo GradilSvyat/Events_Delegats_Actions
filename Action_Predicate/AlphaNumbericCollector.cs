@@ -6,9 +6,9 @@ namespace Action_Predicate
 {
     class AlphaNumbericCollector
     {
-        private List<string> StringWithDigitCollection { get; set; }
+        private static List<string> StringWithDigitCollection { get; set; } = new List<string>();
 
-        public void AddString(string addSrting)
+        public static void AddString(string addSrting)
         {
             StringWithDigitCollection.Add(addSrting);
         }

@@ -6,9 +6,9 @@ namespace Action_Predicate
 {
     class StringCollector
     {
-        private List<string> StringCollection { get; set; }
+        private static List<string> StringCollection { get; set; } = new List<string>();
 
-        public void AddString(string addSrting)
+        public static void AddString(string addSrting)
         {
             StringCollection.Add(addSrting);
         }

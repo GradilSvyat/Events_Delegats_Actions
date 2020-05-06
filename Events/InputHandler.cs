@@ -11,15 +11,6 @@ namespace Events
         public event InputStringHandler InputString;
 
         private string userString;
-        //public string UserString
-        //{
-        //    get { return userString; }
-        //    set
-        //    {
-        //        userString = value;
-        //        InputString(userString);
-        //    }
-        //}       
         public string Input()
         {
             Console.WriteLine("Введите строку: \n");
