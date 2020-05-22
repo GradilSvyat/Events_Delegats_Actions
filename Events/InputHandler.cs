@@ -11,12 +11,14 @@ namespace Events
         public event InputStringHandler InputString;
 
         private string userString;
-        public string Input()
+        public void Input()
         {
-            Console.WriteLine("Введите строку: \n");
-            userString = Console.ReadLine();
-            InputString?.Invoke(userString);
-            return userString;
+            while (true)
+            {
+                Console.WriteLine("Введите строку: \n");
+                userString = Console.ReadLine();
+                InputString?.Invoke(userString);
+            }
         }
     }
 }
